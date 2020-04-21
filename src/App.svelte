@@ -1,5 +1,6 @@
 <script>
   import Input from "./components/Input.svelte";
+  import DomEvent from "./components/DomEvent.svelte";
   export let name;
 </script>
 
@@ -27,8 +28,6 @@
 
 <main>
 
-  <Input bind:value={name} />
-
   <h1>
     Hello
     <strong>{name}</strong>
@@ -40,4 +39,11 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
+  <hr />
+  <h2>Nested component</h2>
+  <Input value="" />
+
+  <hr />
+  <DomEvent />
+
 </main>

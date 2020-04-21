@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  main {
+  div {
     display: flex;
     flex-direction: column;
     border: 2px dotted #ccc;
@@ -19,8 +19,8 @@
   }
 </style>
 
-<main>
-  <input type="text" bind:value />
+<div>
+  <input type="text" bind:value placeholder="Your text here" />
   <br />
   <span>{value}</span>
-</main>
+</div>
